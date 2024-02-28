@@ -13,8 +13,8 @@
     - Create a specific git folder
     - Don’t nest repos
     - Try to keep an organised easy to navigate file system
-- Github:
+- GitHub:
     - Dropbox for GitHub
     - clone down a project from git
-    - git push to push it to github
-    - git pull to get latest changes from github
+    - git push to push it to GitHub
+    - git pull to get latest changes from GitHub
