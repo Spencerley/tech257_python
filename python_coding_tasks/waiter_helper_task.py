@@ -63,10 +63,29 @@ for customer_order_list[0] in starter_dict:
         starter_price = 4.50
     elif customer_order_list[0] == starter_dict.get(starters[1]):
         starter_price = 6.25
-    elif customer_order_list[0] == starter_dict.get(starters[2]):
+    else:
         starter_price = 5.00
 
-bill = [starter_price]
+for customer_order_list[1] in main_dict:
+    if customer_order_list[1] == main_dict.get(mains[0]):
+        mains_price = 24.99
+    elif customer_order_list[1] == main_dict.get(mains[1]):
+        mains_price = 14.85
+    elif customer_order_list[1] == main_dict.get(mains[2]):
+        mains_price = 18.90
+    else:
+        mains = 21.50
+
+for customer_order_list[2] in dessert_dict:
+    if customer_order_list[2] == dessert_dict.get(starters[0]):
+        dessert_price = 10.89
+    elif customer_order_list[2] == dessert_dict.get(starters[1]):
+        dessert_price = 8.99
+    else:
+        dessert_price = 14.99
+
+bill = [starter_price, mains_price, dessert_price]
+print(bill)
 
 # if time: level 4
 # Add more to this program. Recommended ways are: Only allow input that is within the list, Add quantities of order etc.

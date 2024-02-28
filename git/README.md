@@ -18,3 +18,16 @@
     - clone down a project from git
     - git push to push it to GitHub
     - git pull to get latest changes from GitHub
+
+- HEAD is a reference / marker to most recent commit
+- `git diff <old-commit-id> <new-commit-id>`
+  - Second commit 2c542af4a5778ee95fb76f0eaafce380210e97bf 
+  - first commit 6bd6adde35c05eb81c7a9a12f8ffe7bfe61615ab
+     - `git diff 6bd6adde35c05eb81c7a9a12f8ffe7bfe61615ab 2c542af4a5778ee95fb76f0eaafce380210e97bf`
+    
+- View previous commits versions of file folders
+    - `git checkout <old-commit-id>`
+        - Switched you to the old version
+        - Detached commit - we’ve forced it to go to a previous commit, detatched head, not the latest version.
+- Reverting to previous commit (lose changes made after this commit) (**DANGEROUS**)
+    - `git reset --hard <commit-id>`
