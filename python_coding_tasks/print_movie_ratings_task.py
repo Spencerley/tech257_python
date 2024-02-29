@@ -2,11 +2,13 @@
 #
 # You are starting a new Python topic: "Control Flow"
 #
-# Recommended: In the root of your PyCharm project, create a new folder named "control_flow". Store the code for this task there.
+# Recommended: In the root of your PyCharm project, create a new folder named "control_flow".
+# Store the code for this task there.
 #
-# The if statement you make will below will print the meaning of the movie rating specified at the beginning of the code.
+# The if statement you make will below will print the meaning of the movie rating
+# specified at the beginning of the code.
 #
-# You should only need to replace the lines in CAPTIALS with your own code.
+# You should only need to replace the lines in CAPITALS with your own code.
 #
 # Starting code:
 
