@@ -32,6 +32,18 @@ while x < 10:
         break
 print('end of loop')
 
+print('')
+
+x = 0
+
+while x < 10:
+    print(x)
+    x += 1
+    if x >= 4:
+        print(x)
+        break
+print('end of loop')
+
 # The output should be:
 # print x -> 0
 # print x -> 1
