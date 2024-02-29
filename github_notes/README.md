@@ -27,3 +27,9 @@ OR
 
 - Never have credentials in a git repo if you do, delete the repo
     - .gitignore is a safety net but don’t rely on it.
+
+### .gitignore file
+- Create in the root of your project
+- Add in any folders / files that you do not wish to be added i.e. .idea/
+- Add, commit and push
+- Remove from cache following above approach
