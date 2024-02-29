@@ -9,7 +9,7 @@
 
 x = 0
 while x < 10:
-    print(f'{x}')
+    print(x)
     x += 1
 
 # Once your code works, find out what happens when you run the code if you
@@ -25,7 +25,7 @@ print('')
 x = 0
 
 while x < 10:
-    print(f'{x}')
+    print(x)
     x += 1
     if x == 4:
         print(x)
