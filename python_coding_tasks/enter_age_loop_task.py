@@ -19,12 +19,7 @@ while user_prompt:
     if age.isdigit() and int(age) <= 117:
         user_prompt = False
     else:
-        print('Please re-enter your age as a digit and under 117')
-
-# PUT IF STATEMENT HERE TO CHECK IF age IS ALL DIGITS
-# SET user_prompt TO FALSE
-# ADD ELSE STATEMENT HERE
-# TELL USER THE PROBLEM WITH THEIR INPUT
+        print('Please re-enter your age as a digit and under 118')
 
 print(f"Your age is {age}")
 
