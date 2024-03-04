@@ -25,23 +25,23 @@ pokemon_data = json.loads(response.text)
 # ability = abilities['ability']
 
 # to format height and weight properly
-# height = int(pokemon_data['height'])
-# weight = int(pokemon_data['weight'])
-#
-# height_formatted = height / 10
-# weight_formatted = weight / 10
+user_height = int(pokemon_data['height'])
+user_weight = int(pokemon_data['weight'])
+
+user_height_formatted = user_height / 10
+user_weight_formatted = user_weight / 10
 hp_formatted = int(pokemon_data['stats'][0]['base_stat'])
-attack = int(pokemon_data['stats'][1]['base_stat'])
-defense = int(pokemon_data['stats'][2]['base_stat'])
+user_attack = int(pokemon_data['stats'][1]['base_stat'])
+user_defense = int(pokemon_data['stats'][2]['base_stat'])
 
 # Print the pokemon's data
 print('Name: {}'.format(pokemon_data['name']))
-# print('Weight: {}'.format(weight_formatted) + "(kgs)")
-# print('Height: {}'.format(height_formatted) + "(m)")
+print('Weight: {}'.format(user_weight_formatted) + "(kgs)")
+print('Height: {}'.format(user_height_formatted) + "(m)")
 # print('Ability: {}'.format(ability['name']))
 print('Health Points: {}'.format(hp_formatted))
-print('Attack: {}'.format(attack))
-print('Defense: {}'.format(defense))
+print('Attack: {}'.format(user_attack))
+print('Defense: {}'.format(user_defense))
 
 # Computer's random choice 1 - 1025
 pokemon_id = random.randint(1, 1025)
@@ -52,17 +52,84 @@ computer_pokemon_data = json.loads(computer_response.text)
 computer_hp_formatted = int(computer_pokemon_data['stats'][0]['base_stat'])
 computer_attack = int(computer_pokemon_data['stats'][1]['base_stat'])
 computer_defense = int(computer_pokemon_data['stats'][2]['base_stat'])
+computer_height = int(computer_pokemon_data['height'])
+computer_weight = int(computer_pokemon_data['weight'])
+
+computer_height_formatted = computer_height / 10
+computer_weight_formatted = computer_weight / 10
+
+hp = [hp_formatted, computer_hp_formatted]
+attack = [user_attack, computer_attack]
+defense = [user_defense, computer_defense]
+height = [user_height_formatted, computer_height_formatted]
+weight = [user_weight_formatted, computer_weight_formatted]
+
+print('What stat do you pick?')
+stat_choice = str(input().lower())
+print('')
+
+while stat_choice == 'attack':
+    if attack[0] > attack[1]:
+        print('You Win')
+        break
+    elif stat_choice == 'attack' and attack[0] < attack[1]:
+        print('You Lose')
+        break
+    else:
+        print("It's a tie")
+        break
+
+while stat_choice == 'defense':
+    if defense[0] > defense[1]:
+        print('You Win')
+        break
+    elif stat_choice == 'defense' and defense[0] < defense[1]:
+        print('You Lose')
+        break
+    else:
+        print("It's a tie")
+        break
+
+while stat_choice == 'hp':
+    if hp[0] > hp[1]:
+        print('You Win')
+        break
+    elif stat_choice == 'hp' and hp[0] < hp[1]:
+        print('You Lose')
+        break
+    else:
+        print("It's a tie")
+        break
+
+while stat_choice == 'weight':
+    if weight[0] > weight[1]:
+        print('You Win')
+        break
+    elif stat_choice == 'weight' and weight[0] < weight[1]:
+        print('You Lose')
+        break
+    else:
+        print("It's a tie")
+        break
+
+while stat_choice == 'height':
+    if height[0] > height[1]:
+        print('You Win')
+        break
+    elif stat_choice == 'height' and height[0] < height[1]:
+        print('You Lose')
+        break
+    else:
+        print("It's a tie")
+        break
 
 print('')
 print('Name: {}'.format(computer_pokemon_data['name']))
 print('Health Points: {}'.format(computer_hp_formatted))
 print('Attack: {}'.format(computer_attack))
 print('Defense: {}'.format(computer_defense))
+print('Weight: {}'.format(computer_weight_formatted) + "(kgs)")
+print('Height: {}'.format(computer_height_formatted) + "(m)")
 print('  ')
 
-if computer_attack > hp_formatted:
-    print('You lose')
-elif computer_attack < hp_formatted and attack > computer_hp_formatted:
-    print('You win')
-else:
-    print("It's a tie")
+
