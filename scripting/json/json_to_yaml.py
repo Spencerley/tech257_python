@@ -19,15 +19,6 @@ else:
 # Process the conversion - use yaml library
 yaml_file = yaml.dump(source_content)
 
-# Directory
-directory = 'C:/Users/space/Documents/github/tech257_python/scripting/json'
-
-# Path to parent dir
-parent_dir = 'C:/Users/space/Documents/github/tech257_python/scripting'
-
-# path
-path = os.path.join(parent_dir, directory)
-
 # Save the conversion in a new file output.yaml
-with open(os.path.join(path, 'output.yaml'), 'w') as file1:
+with open(os.path.join('output.yaml'), 'w') as file1:
     file1.write(yaml_file)

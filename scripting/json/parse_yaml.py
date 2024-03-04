@@ -1,4 +1,3 @@
-import os
 import yaml
 
 path_to_yaml = "output.yaml"
