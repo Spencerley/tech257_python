@@ -34,6 +34,7 @@ hp_formatted = int(pokemon_data['stats'][0]['base_stat'])
 user_attack = int(pokemon_data['stats'][1]['base_stat'])
 user_defense = int(pokemon_data['stats'][2]['base_stat'])
 
+print('')
 # Print the pokemon's data
 print('Name: {}'.format(pokemon_data['name']))
 print('Weight: {}'.format(user_weight_formatted) + "(kgs)")
@@ -64,6 +65,7 @@ defense = [user_defense, computer_defense]
 height = [user_height_formatted, computer_height_formatted]
 weight = [user_weight_formatted, computer_weight_formatted]
 
+print('')
 print('What stat do you pick?')
 stat_choice = str(input().lower())
 print('')
