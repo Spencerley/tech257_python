@@ -1,0 +1,47 @@
+# RESTful API’s: Notes from SoC Day on API's
+
+- What is REST:
+    - Architectural style centred around resources based on web standards and the HTTP protocol.
+    - REpresentational
+    - State
+    - Transfer
+    - Became popular because it's built on top of the HTTP protocol. Don’t have to learn anything massively new just learn to work within the protocol.
+- Defined by a number of constraints:
+    - Uniform Interface (HATEOS) App state can’t have assumptions made about it.
+    - Client Server.
+    - Stateless. Can’t assume any info or knowledge, no client context is stored on the server. If you have state you can’t scale.
+    - Cacheable. Allows you to cache the response and not have to retrieve the full data, respond to requests much faster
+- Resources -
+    - the fundamental building blocks of web-based systems.
+    - Might be a collection of objects or and individual object.
+    - Defined by URI (Uniform Resource Identifier) Manipulated through CRUD operations mapped to HTTP through HTTP Methods/Verbs POST GET PUT DELETE.
+    - A RESTAPI endpoint is defined by a combination of resource URI and an HTTP verb that manipulates it.
+- If your API is re-defining the HTTP verbs or assigning new meanings to status codes it is not RESTful!
+- REST and HTTP methods:
+    - Create - POST
+    - Read - GET
+    - Update - PUT / PATCH
+    - Delete - DELETE
+- HTTP Response Codes:
+    - 100 range: Info code
+    - 200 range: Successful codes
+    - 300 range: Redirection codes - This makes the internet not fall over, it no longer exists here so the info has moved to here
+    - 400 range: Client Error codes - Whoever made the request screwed up.
+    - 500 range: Server Error codes - The server screwed up / we screwed up on the server
+- Anatomy of a request - HTTP Method / Base URI / Version(optional) / Resource URI / Path Parameter / Query Parameters(optional)
+    - Headers: Accept and Authorisation, you’ll also get a status and contentType.
+- Versioning API’s
+    - APIs are contracts established between you and the API Consumer
+    - Make the version mandatory and do not release un-versioned APIs
+    - Use a simple ordinal number (avoid dot notation)
+    - Resource Versioning:
+        - Accept Header
+    - URI Versioning:
+        - Version is part of the URI as a prefix or a suffix
+- Summary:
+    - Model API based on resources it exposes
+    - REST server MUST be Client-state agnostic (all context should be in the request)
+    - Use nouns but not verbs in the path/URI
+    - GET methods should never alter state
+    - Handle errors with the HTTP Status Codes
+    - Version your API
