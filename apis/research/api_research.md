@@ -2,7 +2,7 @@
    1. APIs are mechanisms that enable two software components to communicate with each other using a set of definitions and protocols
    2.  They allow different applications to communicate with each other in real-time, on the internet. APIs have made it possible for different applications of different origins to interact with each other.
 
-![api request.png](api%20request.png)
+![api request.png](api request.png)
 
 2. What is a REST API? What makes an API RESTful? What are the REST guidelines?
    1. A RESTful API is an architectural style for an application program interface (API) that uses HTTP requests to access and use data. That data can be used to GET, PUT, POST and DELETE data types, which refers to the reading, updating, creating and deleting of operations concerning resources.
