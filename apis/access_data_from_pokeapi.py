@@ -127,11 +127,9 @@ while stat_choice == 'height':
 
 print('')
 print('Name: {}'.format(computer_pokemon_data['name']))
+print('Weight: {}'.format(computer_weight_formatted) + "(kgs)")
+print('Height: {}'.format(computer_height_formatted) + "(m)")
 print('Health Points: {}'.format(computer_hp_formatted))
 print('Attack: {}'.format(computer_attack))
 print('Defense: {}'.format(computer_defense))
-print('Weight: {}'.format(computer_weight_formatted) + "(kgs)")
-print('Height: {}'.format(computer_height_formatted) + "(m)")
 print('  ')
-
-
