@@ -36,7 +36,7 @@
    1. HTTP verbs: 
       - Retrieve a single item or list of items (GET)
       - Create an item (POST)
-      - Partial modifications to a resource (PATCH)
+      - Partial modifications to an item (PATCH)
       - Update an item (PUT)
       - Delete an item (DELETE)
 
