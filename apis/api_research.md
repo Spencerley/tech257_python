@@ -42,6 +42,10 @@
 
 7. What is statelessness? Show examples of “stateless” and “stateful” http requests.
    1. State is either maintained on the servers (stateful architecture) or in a separate database outside the servers (stateless architecture). The HTTP protocol itself does not maintain state.
+   2. Stateless Protocol:
+      - Stateless Protocols are the type of network protocols in which Client send request to the server and server response back according to current state. It does not require the server to retain session information or a status about each communicating partner for multiple requests. 
+   3. Stateful Protocol:
+      - In Stateful Protocol If client send a request to the server then it expects some kind of response, if it does not get any response then it resend the request. FTP (File Transfer Protocol), TCP, and Telnet are the example of Stateful Protocol. 
 ![stateful_vs_stateless_http.png](stateful_vs_stateless_http.png)
 
 8. What is caching?
