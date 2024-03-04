@@ -30,7 +30,7 @@ user_weight = int(pokemon_data['weight'])
 
 user_height_formatted = user_height / 10
 user_weight_formatted = user_weight / 10
-hp_formatted = int(pokemon_data['stats'][0]['base_stat'])
+user_hp_formatted = int(pokemon_data['stats'][0]['base_stat'])
 user_attack = int(pokemon_data['stats'][1]['base_stat'])
 user_defense = int(pokemon_data['stats'][2]['base_stat'])
 
@@ -40,7 +40,7 @@ print('Name: {}'.format(pokemon_data['name']))
 print('Weight: {}'.format(user_weight_formatted) + "(kgs)")
 print('Height: {}'.format(user_height_formatted) + "(m)")
 # print('Ability: {}'.format(ability['name']))
-print('Health Points: {}'.format(hp_formatted))
+print('Health Points: {}'.format(user_hp_formatted))
 print('Attack: {}'.format(user_attack))
 print('Defense: {}'.format(user_defense))
 
@@ -59,7 +59,7 @@ computer_weight = int(computer_pokemon_data['weight'])
 computer_height_formatted = computer_height / 10
 computer_weight_formatted = computer_weight / 10
 
-hp = [hp_formatted, computer_hp_formatted]
+hp = [user_hp_formatted, computer_hp_formatted]
 attack = [user_attack, computer_attack]
 defense = [user_defense, computer_defense]
 height = [user_height_formatted, computer_height_formatted]
