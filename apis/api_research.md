@@ -9,6 +9,7 @@
    2. REST stands for Representational State Transfer. This means that when a client requests a resource using a REST API, the server transfers back the current state of the resource in a standardized representation.
    3. Guidelines:
     - Uniform Interface (HATEOS) App state can’t have assumptions made about it.
+      - Hypermedia as the Engine of Application State - After a response is made, the server lets the client know which requests it can make next. This data is known as hypermedia.
     - Client Server.
     - Stateless. Can’t assume any info or knowledge, no client context is stored on the server. If you have state you can’t scale.
     - Cacheable. Allows you to cache the response and not have to retrieve the full data, respond to requests much faster
