@@ -22,6 +22,7 @@
   - USERNAME: your username on the VM. For example, cloudysanfrancisco, or cloudysanfrancisco_gmail_com. 
   - For Linux VMs, the USERNAME can't be root, unless you configure your VM to allow root login. For more information, see Connect to VMs as the root user. 
   - For Windows VMs that use Active Directory (AD), the username must be prepended with the AD domain, in the format of DOMAIN\. For example, the user cloudysanfrancisco within the ad.example.com AD has a USERNAME of example\cloudysanfrancisco.
+- i.e. `ssh-keygen -t rsa -b 4096 -C "<your_email_here>"`
 
 ## What are some best practices when using/implementing SSH?
 
@@ -41,3 +42,5 @@
   - ensure that all keys belonging to employees who leave the organization should be deleted — or, at the very least, invalidated — on the spot.
 - Use Updated Versions of the SSH Protocol
   - When the SSH protocol is not updated to its latest version, you make yourself vulnerable to cyberattacks.
+
+![img.png](img.png)
