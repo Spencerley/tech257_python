@@ -44,3 +44,9 @@
   - When the SSH protocol is not updated to its latest version, you make yourself vulnerable to cyberattacks.
 
 ![img.png](img.png)
+
+- cat public key `cat [file name]`
+- Put key on GitHub (not a command) - go to security, deploy key, add new key, give it a title and copy the public key in below.
+- Create ssh-agent process - `eval ssh-agent` 
+- Add ssh key to ssh-agent `ssh-add <path to key>`
+- Test connection to GitHub - `ssh -T git@github.com`
