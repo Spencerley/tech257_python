@@ -42,9 +42,8 @@
   - ensure that all keys belonging to employees who leave the organization should be deleted — or, at the very least, invalidated — on the spot.
 - Use Updated Versions of the SSH Protocol
   - When the SSH protocol is not updated to its latest version, you make yourself vulnerable to cyberattacks.
-
-![img.png](img.png)
-
+<br>
+</br>
 - cat public key `cat [file name]`
 - Put key on GitHub (not a command) - go to security, deploy key, add new key, give it a title and copy the public key in below.
 - Create ssh-agent process - `eval ssh-agent` 
